@@ -1,15 +1,12 @@
+import { Box } from '@mui/material';
 import React from 'react';
 import { FaGithub } from "react-icons/fa";
-import { Box } from '@mui/material';
 
 function Footer() {
   return (
-    <Box
-      sx={{
-        
-      }}
-    >
-        <FaGithub size={30} />
+    <Box className="footer" id="contact">
+    <h2>Contact me!</h2>
+    <p>teodor.lien@gmail.com</p>
     </Box>
   );
 }

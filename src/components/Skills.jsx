@@ -3,7 +3,7 @@ import { Box, Typography } from '@mui/material';
 
 const Skills = () => {
     return (
-        <Box id="skills">
+        <Box id="skills" className="skills">
             <h2>Skills</h2>
             <ul>
                 <li>HTML</li>

@@ -3,7 +3,7 @@ import { Box } from '@mui/material';
 
 const Projects = () => {
     return (
-        <Box id="projects">
+        <Box id="projects" className="projects">
             <h2>Projects</h2>
             <Box sx={{ 
                 ":hover": {
