@@ -1,3 +1,5 @@
+@use "sass:color";
+
 // colors
 $color-dark: #171717;
 $color-dark2: #212121;
@@ -9,8 +11,8 @@ $color-light2: #bbb;
 $color-light3: #ccc;
 $color-light4: #ddd;
 $color-light5: #eee;
-$color-white: #FFFFFF;
-$color-white2: #C4D0EC;
+$color-white: #ffffff;
+$color-white2: #c4d0ec;
 $color-accent: #7dc392;
 $color-blue: #4477be;
 
@@ -18,7 +20,7 @@ $color-blue: #4477be;
 $text-primary: $color-light3;
 $text-secondary: $color-light;
 $text-title: $color-white2;
-$text-link: #4477be;
+$text-link: $color-blue;
 
 // background
 $background: $color-dark2;
@@ -28,5 +30,5 @@ $background4: $color-dark5;
 
 // button
 $button-color: $color-blue;
-$button-hover-color: lighten($color-blue, 10%);
+$button-hover-color: color.adjust($color-blue, $lightness: 10%);
 $button-text: $text-primary;

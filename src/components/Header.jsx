@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import { Box, textFieldClasses } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 function Header() {
   const handleScroll = (id) => {
     const element = document.getElementById(id);
     if (element) {
+      if (id === "home") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+        return;
+      }
       element.scrollIntoView({
         behavior: "smooth",
         block: "start",
@@ -46,6 +54,12 @@ function Header() {
       <Box className="links">
         <Link to="https://github.com/Teodor29" target="_blank">
           <FaGithub size={30} />
+        </Link>
+        <Link
+          to="https://www.linkedin.com/in/teodor-lien-a848b026a/"
+          target="_blank"
+        >
+          <FaLinkedin size={30} />
         </Link>
       </Box>
     </Box>
