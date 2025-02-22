@@ -12,12 +12,17 @@ $color-light3: #ccc;
 $color-light4: #ddd;
 $color-light5: #eee;
 $color-white: #fff;
-$color-heading: #ddd;
-$color-accent: #00FACC;
-$color-accent2: #28C7AA;
-$color-accent3: #3B9484;
-$color-accent4: #3A615A;
-$color-accent5: #2d3d3a5b;
+$color-heading: #ccc;
+//$color-accent: #00FACC;
+//$color-accent2: #45b4a0;
+//$color-accent3: #3B9484;
+//$color-accent4: #3A615A;
+//$color-accent5: #2d3d3a98;
+$color-accent: #c5d8a5;
+$color-accent2: #9FC462;
+$color-accent3: #759D34;
+$color-accent4: #507614;
+$color-accent5: #314e004f;
 $color-blue: #4477be;
 
 // text
@@ -27,10 +32,10 @@ $text-heading: $color-heading;
 $text-link: $color-blue;
 
 // background
-$background: $color-dark2;
-$background2: $color-dark3;
-$background3: $color-dark4;
-$background4: $color-dark5;
+$background: $color-dark;
+$background2: $color-dark2;
+$background3: $color-dark3;
+$background4: $color-dark4;
 
 // button
 $button-color: $color-blue;
