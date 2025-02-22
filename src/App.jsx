@@ -19,7 +19,7 @@ import Header from "./components/Header";
 function App() {
   return (
     <Router>
-      <Box sx={{ marginX: ["1.5rem", "1.5rem", "3rem"] }}>
+      <Box sx={{ marginX: ["0.5rem", "0.5rem", "1.5rem"] }}>
         <Container>
           <Grid container spacing={10}>
             <Grid

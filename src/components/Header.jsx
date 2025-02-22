@@ -24,30 +24,34 @@ function Header() {
   return (
     <Box className="header">
       <Box>
-        <Link to="#home" onClick={() => handleScroll("header")}>
-          <h1
-            sx={{
-              color: "text.highlight",
-            }}
-          >
+        <h1>
+          <Link to="#home" onClick={() => handleScroll("home")}>
             Teodor Lien
-          </h1>
-        </Link>
+          </Link>
+        </h1>
         <h2 sx={{ color: "text.secondary" }}>Frontend Developer</h2>
         <p>Student</p>
 
         <Box className="nav-links">
           <Link to="#home" onClick={() => handleScroll("home")}>
-            Home
+            <span>
+              Home
+            </span>
           </Link>
           <Link to="#skills" onClick={() => handleScroll("skills")}>
-            Skills
+            <span>
+              Skills
+            </span>
           </Link>
           <Link to="#projects" onClick={() => handleScroll("projects")}>
-            Projects
+            <span>
+              Projects
+            </span>
           </Link>
           <Link to="#contact" onClick={() => handleScroll("contact")}>
-            Contact
+            <span>
+              Contact  
+            </span>
           </Link>
         </Box>
       </Box>
