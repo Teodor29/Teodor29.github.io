@@ -30,7 +30,7 @@ function Header() {
           </Link>
         </h1>
         <h2 sx={{ color: "text.secondary" }}>Frontend Developer</h2>
-        <p>Student</p>
+        <h3>Student</h3>
 
         <Box className="nav-links">
           <Link to="#home" onClick={() => handleScroll("home")}>

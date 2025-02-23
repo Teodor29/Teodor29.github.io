@@ -25,7 +25,12 @@ const Projects = () => {
       <h2>Projects</h2>
       <Box className="cards">
         <Box className="card">
-          <CardActionArea onClick={handleCardClick}>
+          <CardActionArea
+            onClick={handleCardClick}
+            sx={{
+              padding: "1rem",
+            }}
+          >
             <CardMedia
               component="img"
               height="290"
@@ -35,9 +40,10 @@ const Projects = () => {
             <CardContent
               sx={{
                 fontFamily: "Inter, sans-serif",
+                padding: "1rem 0 0 0",
               }}
             >
-              <h2>E-scooter Rental</h2>
+              <h3>E-scooter Rental</h3>
               <p>
                 An e-scooter management system featuring an admin web client,
                 customer web and mobile clients. The backend, database, and
@@ -45,12 +51,12 @@ const Projects = () => {
               </p>
               <Box id="skills" className="skills">
                 <ul>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
                   <li>React</li>
+                  <li>JavaScript</li>
+                  <li>MongoDB</li>
+                  <li>SCSS</li>
                   <li>Node.js</li>
                   <li>Express</li>
-                  <li>MongoDB</li>
                   <li>Figma</li>
                   <li>Git</li>
                   <li>Docker</li>
@@ -60,70 +66,35 @@ const Projects = () => {
           </CardActionArea>
         </Box>
         <Box className="card">
-          <CardActionArea onClick={handleCardClick}>
+          <CardActionArea
+            onClick={handleCardClick}
+            sx={{
+              padding: "1rem",
+            }}
+          >
             <CardMedia
               component="img"
               height="290"
-              image="scooter-admin-map.png"
+              image="lien-capital.png"
               alt="green iguana"
             />
             <CardContent
               sx={{
                 fontFamily: "Inter, sans-serif",
+                padding: "1rem 0 0 0",
               }}
             >
-              <h2>E-scooter Rental</h2>
+              <h3>Lien Capital</h3>
               <p>
-                An e-scooter management system featuring an admin web client,
-                customer web and mobile clients. The backend, database, and
-                clients all run in Docker for easy deployment.
+                A website for a financial company. The website is built with PHP-framework Pico and styled with SCSS.
               </p>
               <Box id="skills" className="skills">
                 <ul>
+                  <li>PHP</li> 
                   <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>Figma</li>
+                  <li>Twig</li>
+                  <li>Pico</li>
                   <li>Git</li>
-                  <li>Docker</li>
-                </ul>
-              </Box>
-            </CardContent>
-          </CardActionArea>
-        </Box>
-        <Box className="card">
-          <CardActionArea onClick={handleCardClick}>
-            <CardMedia
-              component="img"
-              height="290"
-              image="scooter-admin-map.png"
-              alt="green iguana"
-            />
-            <CardContent
-              sx={{
-                fontFamily: "Inter, sans-serif",
-              }}
-            >
-              <h2>E-scooter Rental</h2>
-              <p>
-                An e-scooter management system featuring an admin web client,
-                customer web and mobile clients. The backend, database, and
-                clients all run in Docker for easy deployment.
-              </p>
-              <Box id="skills" className="skills">
-                <ul>
-                  <li>SCSS</li>
-                  <li>JavaScript</li>
-                  <li>React</li>
-                  <li>Node.js</li>
-                  <li>Express</li>
-                  <li>MongoDB</li>
-                  <li>Figma</li>
-                  <li>Git</li>
-                  <li>Docker</li>
                 </ul>
               </Box>
             </CardContent>

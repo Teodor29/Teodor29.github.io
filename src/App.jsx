@@ -21,7 +21,7 @@ function App() {
     <Router>
       <Box sx={{ marginX: ["0.5rem", "0.5rem", "1.5rem"] }}>
         <Container>
-          <Grid container spacing={10}>
+          <Grid container spacing={2}>
             <Grid
               item
               xs={12}
@@ -32,24 +32,18 @@ function App() {
                 maxHeight: "100vh",
                 position: { md: "sticky" },
                 top: 0,
-                marginTop: ["0", "0", "5rem"],
               }}
             >
               <Header />
             </Grid>
 
-            <Grid
-              item
-              xs={12}
-              md={6}
-              sx={{
-                marginTop: ["0", "0", "5rem"],
-              }}
-            >
-              <Home />
-              <Skills />
-              <Projects />
-              <Footer />
+            <Grid item xs={12} md={6} sx={{}}>
+              <Box className="main">
+                <Home />
+                <Skills />
+                <Projects />
+                <Footer />
+              </Box>
             </Grid>
           </Grid>
         </Container>
