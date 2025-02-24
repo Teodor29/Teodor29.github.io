@@ -2,19 +2,18 @@ import React from "react";
 import "./styles/main.scss";
 import { BrowserRouter as Router } from "react-router-dom";
 import {
-  ThemeProvider,
-  createTheme,
-  CssBaseline,
   Container,
   Box,
 } from "@mui/material";
 import Grid from "@mui/material/Grid";
-
+import Fab from "@mui/material/Fab";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Header from "./components/Header";
+import ScrollTop from "./components/ScrollTop";
 
 function App() {
   return (
@@ -43,6 +42,16 @@ function App() {
                 <Skills />
                 <Projects />
                 <Footer />
+                <ScrollTop>
+                  <Fab
+                    color="primary"
+                    size="small"
+                    aria-label="scroll back to top"
+                    className="scroll-top"
+                  >
+                    <KeyboardArrowUpIcon />
+                  </Fab>
+                </ScrollTop>
               </Box>
             </Grid>
           </Grid>

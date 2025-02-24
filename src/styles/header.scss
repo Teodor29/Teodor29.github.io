@@ -14,11 +14,11 @@
 
 .header h2 {
   font-size: 1.5rem;
-  color: variables.$text-heading;
 }
 
 .header p {
   padding-top: 0.5rem;
+  color: variables.$text-secondary;
 }
 
 .header .nav-links {
@@ -91,4 +91,8 @@
     margin-top: 0;
     padding-top: 1rem;
   }
+}
+
+.scroll-top {
+  background-color: variables.$background3 !important;
 }

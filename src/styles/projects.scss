@@ -13,6 +13,7 @@
     background: variables.$background2;
     margin-top: 1rem;
     border-radius: 10px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
   }
 
   .card p {
@@ -26,7 +27,7 @@
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
-    border: 3px solid variables.$color-accent5;
+    box-shadow: 0 0 10px rgba(variables.$color-accent, 0.2);
   }
 
   .skills {
@@ -45,9 +46,15 @@
   .card:hover {
     h3 {
       color: variables.$color-accent3;
+      transition: color 0.3s ease;
     }
     p {
       color: variables.$color-light2;
+      transition: color 0.3s ease;
+    }
+    img {
+      box-shadow: 0 0 15px rgba(variables.$color-accent, 0.3);
+      transition: box-shadow 1s ease;
     }
   }
 }

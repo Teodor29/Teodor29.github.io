@@ -29,29 +29,23 @@ function Header() {
             Teodor Lien
           </Link>
         </h1>
-        <h2 sx={{ color: "text.secondary" }}>Frontend Developer</h2>
-        <h3>Student</h3>
+        <h2>Frontend Developer</h2>
+        <p>
+          <a href="mailto:teodor.lien@gmail.com">teodor.lien@gmail.com</a>
+        </p>
 
         <Box className="nav-links">
           <Link to="#home" onClick={() => handleScroll("home")}>
-            <span>
-              Home
-            </span>
+            <span>Home</span>
           </Link>
           <Link to="#skills" onClick={() => handleScroll("skills")}>
-            <span>
-              Skills
-            </span>
+            <span>Skills</span>
           </Link>
           <Link to="#projects" onClick={() => handleScroll("projects")}>
-            <span>
-              Projects
-            </span>
+            <span>Projects</span>
           </Link>
           <Link to="#contact" onClick={() => handleScroll("contact")}>
-            <span>
-              Contact  
-            </span>
+            <span>Contact</span>
           </Link>
         </Box>
       </Box>

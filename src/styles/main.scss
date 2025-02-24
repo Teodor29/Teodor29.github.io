@@ -39,3 +39,9 @@ h3 {
 .main {
   padding: 7rem 0;
 }
+
+@media screen and (max-width: 600px) {
+  .main {
+  padding: 2rem 0;
+  }
+}
