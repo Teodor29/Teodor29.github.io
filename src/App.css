@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  /* Dark colors */
+  --color-dark: #0a0a0a;
+  --color-dark-2: #1a1a1a;
+  --color-dark-3: #2a2a2a;
+  --color-dark-4: #3a3a3a;
+  --color-dark-5: #4a4a4a;
+  --color-dark-6: #5a5a5a;
+
+  /* Accent colors */
+  --color-accent-background: #1e2319;
+  --color-accent-text: #b8de93;
+  --color-accent-hover: #83b552;
+
+  /* Text colors */
+  --color-primary: #c0c0c0;
+  --color-secondary: #c0c0c0;
+  --color-heading: #f0f0f0;
+  --color-link: #83b552;
+
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-dark font-sans m-0 p-0 text-primary;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-heading;
+    font-weight: 600;
+  }
+
+  h1 {
+    @apply text-4xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-link no-underline inline-block gap-1;
+  }
+
+  a:hover {
+    @apply underline;
+  }
+}
+
+@layer components {
+  .scroll-top {
+    background-color: var(--color-dark-3) !important;
+  }
+
+  .header a {
+    color: inherit;
+  }
+}
