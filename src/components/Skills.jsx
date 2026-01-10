@@ -1,9 +1,8 @@
 import React from "react";
-import { Box } from "@mui/material";
 
 const Skills = ({ skills }) => {
   return (
-    <Box id="skills" className="py-8">
+    <div id="skills" className="py-8">
       <h2 className="mb-4">Skills</h2>
       <ul className="flex gap-4 pl-0 list-none flex-wrap">
         {skills.map((skill, index) => (
@@ -15,7 +14,7 @@ const Skills = ({ skills }) => {
           </li>
         ))}
       </ul>
-    </Box>
+    </div>
   );
 };
 

@@ -1,9 +1,6 @@
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import { Container, Box } from "@mui/material";
-import Grid from "@mui/material/Grid";
-import Fab from "@mui/material/Fab";
-import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import { MdKeyboardArrowUp } from "react-icons/md";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
@@ -42,46 +39,30 @@ const skillsList = [
 function App() {
   return (
     <Router>
-      <Box sx={{ marginX: ["0.5rem", "0.5rem", "1.5rem"] }}>
-        <Container>
-          <Grid container spacing={2}>
-            <Grid
-              item
-              xs={12}
-              md={6}
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                maxHeight: "100vh",
-                position: { md: "sticky" },
-                top: 0,
-                paddingTop: "0 !important",
-              }}
-            >
+      <div className="mx-4 md:mx-8">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="flex flex-col max-h-screen md:sticky top-0 pt-0">
               <Header />
-            </Grid>
+            </div>
 
-            <Grid item xs={12} md={6} sx={{}}>
-              <Box className="py-4 md:py-28">
-                <Home />
-                <Skills skills={skillsList} />
-                <Projects />
-                <Footer />
-                <ScrollTop>
-                  <Fab
-                    color="primary"
-                    size="small"
-                    aria-label="scroll back to top"
-                    className="scroll-top"
-                  >
-                    <KeyboardArrowUpIcon />
-                  </Fab>
-                </ScrollTop>
-              </Box>
-            </Grid>
-          </Grid>
-        </Container>
-      </Box>
+            <div className="py-4 md:py-28">
+              <Home />
+              <Skills skills={skillsList} />
+              <Projects />
+              <Footer />
+              <ScrollTop>
+                <button
+                  aria-label="scroll back to top"
+                  className="scroll-top rounded-full p-2 cursor-pointer"
+                >
+                  <MdKeyboardArrowUp size={24} />
+                </button>
+              </ScrollTop>
+            </div>
+          </div>
+        </div>
+      </div>
     </Router>
   );
 }

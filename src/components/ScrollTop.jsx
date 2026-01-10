@@ -1,7 +1,4 @@
-import * as React from 'react';
-import useScrollTrigger from '@mui/material/useScrollTrigger';
-import Box from '@mui/material/Box';
-import Fade from '@mui/material/Fade';
+import useScrollTrigger from "@mui/material/useScrollTrigger";
 
 function ScrollTop(props) {
   const { children, window } = props;
@@ -13,27 +10,24 @@ function ScrollTop(props) {
 
   const handleClick = (event) => {
     const anchor = (event.target.ownerDocument || document).querySelector(
-      '#home',
+      "#home"
     );
 
     if (anchor) {
       anchor.scrollIntoView({
-        behavior: 'smooth',
-        block: 'center',
+        behavior: "smooth",
+        block: "center",
       });
     }
   };
 
   return (
-    <Fade in={trigger}>
-      <Box
+      <div
         onClick={handleClick}
-        role="presentation"
-        sx={{ position: 'fixed', bottom: 16, right: 16 }}
+        className="fixed bottom-16 right-16"
       >
         {children}
-      </Box>
-    </Fade>
+      </div>
   );
 }
 

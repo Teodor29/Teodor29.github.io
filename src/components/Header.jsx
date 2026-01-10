@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Box, textFieldClasses } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -22,8 +21,8 @@ function Header() {
   };
 
   return (
-    <Box className="header h-full flex flex-col py-8 md:py-28">
-      <Box>
+    <div className="header h-full flex flex-col py-8 md:py-28">
+      <div>
         <h1 className="text-6xl">
           <Link
             to="#home"
@@ -35,7 +34,7 @@ function Header() {
         </h1>
         <h2 className="text-2xl">Frontend Developer</h2>
 
-        <Box className="flex flex-row pt-4 md:flex-col md:pt-12">
+        <div className="flex flex-row pt-4 md:flex-col md:pt-12">
           <Link
             to="#home"
             onClick={() => handleScroll("home")}
@@ -64,12 +63,13 @@ function Header() {
           >
             <span>Contact</span>
           </Link>
-        </Box>
-      </Box>
-      <Box className="mt-0 pt-4 flex gap-4 md:mt-auto md:pt-12">
+        </div>
+      </div>
+      <div className="mt-0 pt-4 flex gap-4 md:mt-auto md:pt-12">
         <Link
           to="https://github.com/Teodor29"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-inherit no-underline m-0"
         >
           <FaGithub size={30} />
@@ -77,12 +77,13 @@ function Header() {
         <Link
           to="https://www.linkedin.com/in/teodorlien"
           target="_blank"
+          rel="noopener noreferrer"
           className="text-inherit no-underline m-0"
         >
           <FaLinkedin size={30} />
         </Link>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
 

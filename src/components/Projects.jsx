@@ -1,13 +1,11 @@
 import React from "react";
-import { Box } from "@mui/material";
-import { Link, useNavigate } from "react-router-dom";
 import ProjectCard from "./ProjectCard.jsx";
 
 const Projects = () => {
   return (
-    <Box id="projects" className="py-8">
+    <div id="projects" className="py-8">
       <h2 className="mb-4">Projects</h2>
-      <Box className="flex flex-col gap-8">
+      <div className="flex flex-col gap-8">
         <ProjectCard
           project={{
             title: "E-scooter Rental",
@@ -53,8 +51,8 @@ const Projects = () => {
             link: "https://github.com/Teodor29/to-do",
           }}
         />
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 };
 
