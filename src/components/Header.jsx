@@ -34,7 +34,7 @@ function Header() {
         </h1>
         <h2 className="text-2xl">Frontend Developer</h2>
 
-        <div className="flex flex-row pt-4 md:flex-col md:pt-12">
+        <div className="hidden md:flex flex-col pt-12">
           <Link
             to="#home"
             onClick={() => handleScroll("home")}

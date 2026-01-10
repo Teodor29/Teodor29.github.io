@@ -1,12 +1,10 @@
 import "./App.css";
 import { BrowserRouter as Router } from "react-router-dom";
-import { MdKeyboardArrowUp } from "react-icons/md";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Header from "./components/Header";
-import ScrollTop from "./components/ScrollTop";
 
 const skillsList = [
   "HTML",
@@ -51,14 +49,6 @@ function App() {
               <Skills skills={skillsList} />
               <Projects />
               <Footer />
-              <ScrollTop>
-                <button
-                  aria-label="scroll back to top"
-                  className="scroll-top rounded-full p-2 cursor-pointer"
-                >
-                  <MdKeyboardArrowUp size={24} />
-                </button>
-              </ScrollTop>
             </div>
           </div>
         </div>

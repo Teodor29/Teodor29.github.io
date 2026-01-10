@@ -13,9 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@mui/material": "^7.3.7",
     "@tailwindcss/vite": "^4.1.18",
-    "framer-motion": "^12.4.5",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
