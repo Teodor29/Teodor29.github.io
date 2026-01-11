@@ -4,7 +4,7 @@ import { IoMail } from "react-icons/io5";
 
 function Footer() {
   return (
-    <div className="py-8" id="contact">
+    <div className="py-4 md:py-8" id="contact">
       <h2 className="mb-4">Contact me!</h2>
       <div className="flex flex-col gap-2">
         <p>

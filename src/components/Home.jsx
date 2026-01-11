@@ -1,6 +1,6 @@
 const Home = () => {
   return (
-    <div className="pb-8" id="home">
+    <div className="pb-4 md:pb-8" id="home">
       <div>
         <p className="mb-4">
           I’m a developer passionate about creating clean, user-friendly

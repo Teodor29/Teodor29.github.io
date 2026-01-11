@@ -21,7 +21,7 @@ function Header() {
   };
 
   return (
-    <div className="header h-full flex flex-col py-8 md:py-28">
+    <div className="header h-full flex flex-col pt-8 md:py-28">
       <div>
         <h1 className="text-6xl">
           <Link
