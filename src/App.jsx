@@ -5,34 +5,7 @@ import Home from "./components/Home";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Header from "./components/Header";
-
-const skillsList = [
-  "HTML",
-  "PHP",
-  "JavaScript",
-  "CSS",
-  "SCSS",
-  "Python",
-  "Twig",
-  "React",
-  "Pico CMS",
-  "Bootstrap",
-  "Material-UI",
-  "Tailwind CSS",
-  "Node.js",
-  "Express",
-  "MongoDB",
-  "SQL",
-  "Git",
-  "GitHub",
-  "Docker",
-  "Linux",
-  "Visual Studio Code",
-  "Figma",
-  "Photoshop",
-  "REST API",
-  "Postman",
-];
+import { skills } from "./data/portfolioData";
 
 function App() {
   return (
@@ -46,7 +19,7 @@ function App() {
 
             <div className="py-4 md:py-28">
               <Home />
-              <Skills skills={skillsList} />
+              <Skills skills={skills} />
               <Projects />
               <Footer />
             </div>
