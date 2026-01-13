@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
         className="block p-4 no-underline"
       >
         <img
-          src={`/${project.image}`}
+          src={project.image}
           alt={project.altText}
           className="box-border w-full object-cover rounded-lg border-dark-4 shadow-[0_0_10px_rgba(58,58,58,0.2)] group-hover:shadow-[0_0_15px_rgba(74,74,74,0.3)] group-hover:border-dark-5 transition-shadow duration-1000 ease-in-out"
         />
@@ -24,7 +24,10 @@ const ProjectCard = ({ project }) => {
           <div className="pt-4">
             <ul className="flex gap-2 m-0 p-0 list-none flex-wrap">
               {project.skills.map((skill, index) => (
-                <li key={index} className="py-1 px-2 text-sm bg-accent-background rounded-full text-accent-text">
+                <li
+                  key={index}
+                  className="py-1 px-2 text-sm bg-accent-background rounded-full text-accent-text"
+                >
                   {skill}
                 </li>
               ))}
