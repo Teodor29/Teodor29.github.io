@@ -33,6 +33,23 @@ export const skills = [
 
 export const projects = [
   {
+    title: "Train Delay Map",
+    description:
+      "An interactive web application for real-time monitoring of train delays across Sweden. The app displays train stations and delayed trains on a map with live updates. Users can save favorite stations and view detailed delay information.",
+    image: trainDelayMap,
+    altText: "Train Delay Map",
+    skills: [
+      "JavaScript",
+      "SCSS",
+      "Web Components",
+      "WebSockets",
+      "JWT",
+      "Leaflet",
+      "Git",
+    ],
+    link: "https://github.com/Teodor29/train-delay-map",
+  },
+  {
     title: "E-scooter Rental",
     description:
       "A group project built by four students. Electric scooter rental system with backend, simulation, and three web clients: admin, customer (mobile) and customer (desktop). Everything runs in Docker for easy setup.",
@@ -59,23 +76,6 @@ export const projects = [
     altText: "To Do",
     skills: ["React", "Vite", "JavaScript", "Tailwind CSS", "Git"],
     link: "https://github.com/Teodor29/to-do",
-  },
-  {
-    title: "Train Delay Map",
-    description:
-      "An interactive web application for real-time monitoring of train delays across Sweden. The app displays train stations and delayed trains on a map with live updates. Users can save favorite stations and view detailed delay information.",
-    image: trainDelayMap,
-    altText: "Train Delay Map",
-    skills: [
-      "JavaScript",
-      "SCSS",
-      "Web Components",
-      "WebSockets",
-      "JWT",
-      "Leaflet",
-      "Git",
-    ],
-    link: "https://github.com/Teodor29/train-delay-map",
   },
   {
     title: "Lien Capital",
