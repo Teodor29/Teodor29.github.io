@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { Box, textFieldClasses } from "@mui/material";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -22,45 +21,69 @@ function Header() {
   };
 
   return (
-    <Box className="header">
-      <Box>
-        <h1>
-          <Link to="#home" onClick={() => handleScroll("home")}>
+    <div className="header h-full flex flex-col pt-8 md:py-28">
+      <div>
+        <h1 className="text-6xl">
+          <Link
+            to="#home"
+            onClick={() => handleScroll("home")}
+            className="no-underline"
+          >
             Teodor Lien
           </Link>
         </h1>
-        <h2>Frontend Developer</h2>
-        <p>
-          <a href="mailto:teodor.lien@gmail.com">teodor.lien@gmail.com</a>
-        </p>
+        <h2 className="text-2xl">Frontend Developer</h2>
 
-        <Box className="nav-links">
-          <Link to="#home" onClick={() => handleScroll("home")}>
+        <div className="hidden md:flex flex-col pt-12">
+          <Link
+            to="#home"
+            onClick={() => handleScroll("home")}
+            className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover"
+          >
             <span>Home</span>
           </Link>
-          <Link to="#skills" onClick={() => handleScroll("skills")}>
+          <Link
+            to="#skills"
+            onClick={() => handleScroll("skills")}
+            className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover"
+          >
             <span>Skills</span>
           </Link>
-          <Link to="#projects" onClick={() => handleScroll("projects")}>
+          <Link
+            to="#projects"
+            onClick={() => handleScroll("projects")}
+            className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover"
+          >
             <span>Projects</span>
           </Link>
-          <Link to="#contact" onClick={() => handleScroll("contact")}>
+          <Link
+            to="#contact"
+            onClick={() => handleScroll("contact")}
+            className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover"
+          >
             <span>Contact</span>
           </Link>
-        </Box>
-      </Box>
-      <Box className="links">
-        <Link to="https://github.com/Teodor29" target="_blank">
+        </div>
+      </div>
+      <div className="mt-0 pt-4 flex gap-4 md:mt-auto md:pt-12">
+        <Link
+          to="https://github.com/Teodor29"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-inherit no-underline m-0"
+        >
           <FaGithub size={30} />
         </Link>
         <Link
-          to="https://www.linkedin.com/in/teodor-lien-a848b026a/"
+          to="https://www.linkedin.com/in/teodorlien"
           target="_blank"
+          rel="noopener noreferrer"
+          className="text-inherit no-underline m-0"
         >
           <FaLinkedin size={30} />
         </Link>
-      </Box>
-    </Box>
+      </div>
+    </div>
   );
 }
 
