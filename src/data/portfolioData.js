@@ -10,7 +10,6 @@ export const skills = [
   "JavaScript",
   "TypeScript",
   "React",
-  "Responsive Design",
 
   // Styling
   "Tailwind CSS",
@@ -20,15 +19,11 @@ export const skills = [
   "Node.js",
   "Express.js",
   "PHP",
-  "REST API",
   "MySQL",
-  "JWT",
   "MongoDB",
   "Docker",
 
   "Git",
-  "Agile",
-  "Scrum",
 ];
 
 export const projects = [
