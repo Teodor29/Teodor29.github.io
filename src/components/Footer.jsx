@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { FaLinkedin } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
 function Footer() {
@@ -8,23 +7,22 @@ function Footer() {
       <h2 className="mb-4">Contact me!</h2>
       <div className="flex flex-col gap-2">
         <p>
-          <Link
-            to="mailto:teodor.lien@gmail.com"
-            className="text-inherit flex items-center"
-          >
+          <a href="mailto:teodor.lien@gmail.com" className="text-inherit flex items-center gap-2">
             <IoMail size={16} />
             teodor.lien@gmail.com
-          </Link>
+          </a>
         </p>
         <p>
-          <Link
-            to="https://www.linkedin.com/in/teodorlien"
-            target="_blank"
-            className="text-inherit flex items-center"
-          >
+          <a href="https://www.linkedin.com/in/teodorlien" target="_blank" rel="noopener noreferrer" className="text-inherit flex items-center gap-2">
             <FaLinkedin size={16} />
             LinkedIn
-          </Link>
+          </a>
+        </p>
+        <p>
+          <a href="https://www.github.com/Teodor29" target="_blank" rel="noopener noreferrer" className="text-inherit flex items-center gap-2">
+            <FaGithub size={16} />
+            GitHub
+          </a>
         </p>
       </div>
     </div>
