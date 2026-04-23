@@ -36,13 +36,22 @@ export const projects = [
     skills: [
       "JavaScript",
       "SCSS",
-      "Web Components",
       "WebSockets",
-      "JWT",
       "Leaflet",
       "Git",
     ],
     link: "https://github.com/Teodor29/train-delay-map",
+    liveLink: "https://train-delay.vercel.app/",
+  },
+  {
+    title: "To Do List",
+    description:
+    "A responsive to-do list app built with React and Tailwind CSS. Users can add and complete tasks. Deployed with GitHub Pages.",
+    image: toDo,
+    altText: "To Do",
+    skills: ["React", "Vite", "JavaScript", "Tailwind CSS", "Git"],
+    link: "https://github.com/Teodor29/to-do",
+    liveLink: "https://teodor29.github.io/to-do/",
   },
   {
     title: "E-scooter Rental",
@@ -62,15 +71,6 @@ export const projects = [
       "REST API",
     ],
     link: "https://github.com/Teodor29/e-scooter-project-vteam",
-  },
-  {
-    title: "To Do List",
-    description:
-      "A responsive to-do list app built with React and Tailwind CSS. Users can add and complete tasks. Deployed with GitHub Pages.",
-    image: toDo,
-    altText: "To Do",
-    skills: ["React", "Vite", "JavaScript", "Tailwind CSS", "Git"],
-    link: "https://github.com/Teodor29/to-do",
   },
   {
     title: "Lien Capital",
