@@ -2,7 +2,7 @@
 
 This is my personal portfolio built with **React** and styled with **SCSS**. It showcases my skills, selected projects, and how to contact me.
 
-https://teodor29.github.io/
+[teodorlien.com](https://teodorlien.com)
 
 ## Getting Started
 To run the project locally:
