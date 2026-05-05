@@ -4,28 +4,19 @@ import trainDelayMap from "../assets/train-delay-map.png";
 import lienCapital from "../assets/lien-capital.png";
 
 export const skills = [
-  // Frontend
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-
-  // Styling
-  "Tailwind CSS",
-  "SCSS",
-
-  // Backend
-  "Node.js",
-  "Express.js",
-  "PHP",
-  "MySQL",
-  "MongoDB",
-  "Docker",
-
-  "Git",
+  {
+    category: "Frontend",
+    items: ["JavaScript", "TypeScript", "React", "Tailwind CSS", "CSS/SCSS", "HTML"],
+  },
+  {
+    category: "Backend",
+    items: ["Node.js", "Express.js", "REST API", "MongoDB", "MySQL"],
+  },
+  {
+    category: "Tools",
+    items: ["Git", "Vite", "Vercel", "Docker"],
+  },
 ];
-
 export const projects = [
   {
     title: "Train Delay Map",
@@ -33,30 +24,22 @@ export const projects = [
       "An interactive web application for real-time monitoring of train delays across Sweden. The app displays train stations and delayed trains on a map with live updates. Users can save favorite stations and view detailed delay information.",
     image: trainDelayMap,
     altText: "Train Delay Map",
-    skills: [
-      "JavaScript",
-      "SCSS",
-      "WebSockets",
-      "Leaflet",
-      "Git",
-    ],
-    link: "https://github.com/Teodor29/train-delay-map",
-    liveLink: "https://train-delay.vercel.app/",
+    skills: ["JavaScript", "SCSS", "WebSockets", "Leaflet", "Git"],
+    link: "https://train-delay.vercel.app/",
   },
   {
     title: "To Do List",
     description:
-    "A responsive to-do list app built with React and Tailwind CSS. Users can add and complete tasks. Deployed with GitHub Pages.",
+      "A responsive to-do list app built with React and Tailwind CSS. Users can add and complete tasks. Deployed with GitHub Pages.",
     image: toDo,
     altText: "To Do",
     skills: ["React", "Vite", "JavaScript", "Tailwind CSS", "Git"],
-    link: "https://github.com/Teodor29/to-do",
-    liveLink: "https://teodor29.github.io/to-do/",
+    link: "https://teodor29.github.io/to-do/",
   },
   {
     title: "E-scooter Rental",
     description:
-      "A group project built by four students. Electric scooter rental system with backend, simulation, and three web clients: admin, customer (mobile) and customer (desktop). Everything runs in Docker for easy setup.",
+      "Group project. Electric scooter rental system with backend, simulation, and three web clients: admin, customer (mobile) and customer (desktop). I was responsible for the frontend and Docker setup. Fully containerized for easy local development.",
     image: scooterAdminMap,
     altText: "E-scooter Rental",
     skills: [
@@ -77,7 +60,7 @@ export const projects = [
       "A simple and responsive website built with Pico CMS for an investment company.",
     image: lienCapital,
     altText: "Lien Capital",
-    skills: ["PHP", "Composer", "Twig", "SCSS", "Git", "pico CMS"],
+    skills: ["PHP", "Twig", "SCSS", "Git", "Pico CMS"],
     link: "https://github.com/Teodor29/investment-company-design",
   },
 ];

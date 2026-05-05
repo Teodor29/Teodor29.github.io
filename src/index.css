@@ -8,10 +8,10 @@
   --color-elevated: oklch(22% 0 0);
   --color-border:   oklch(26% 0 0);
 
-  --color-accent:        oklch(65% 0.107 130.23);
-  --color-accent-hover:  oklch(55% 0.107 130.23);
-  --color-accent-text:   oklch(75% 0.107 130.23);
-  --color-accent-subtle: oklch(15% 0.107 130.23);
+  --color-accent:        oklch(65% 0.1 130);
+  --color-accent-hover:  oklch(55% 0.1 130);
+  --color-accent-text:   oklch(75% 0.1 130);
+  --color-accent-subtle: oklch(25% 0.02 130);
 
   --color-fg:         oklch(78% 0 0);
   --color-fg-muted:   oklch(65% 0 0);
@@ -31,6 +31,10 @@
   body {
     @apply bg-page text-fg font-sans antialiased;
   }
+  
+  h2 {
+    @apply text-lg
+  }
 
   h1,
   h2,
@@ -38,8 +42,7 @@
   h4,
   h5,
   h6 {
-    @apply text-fg-heading;
-    font-weight: 600;
+    @apply text-fg-heading font-medium;
   }
 
   a {
@@ -69,6 +72,10 @@
   }
 
   .iconlink {
-    @apply text-inherit no-underline m-0;
+    @apply text-fg no-underline flex items-center gap-2;
+  }
+
+  .footerlink {
+    @apply text-fg hover:text-accent-hover no-underline flex items-center gap-2;
   }
 }

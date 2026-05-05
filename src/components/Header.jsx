@@ -13,12 +13,12 @@ function Header() {
   return (
     <div className="header h-full flex flex-col pt-8 md:py-28">
       <div>
-        <h1 className="text-6xl">
+        <h1 className="text-5xl font-bold">
           <a href="#home" onClick={(e) => handleScroll(e, "home")} className="text-fg-heading">
             Teodor Lien
           </a>
         </h1>
-        <h2 className="text-2xl">Frontend Developer</h2>
+        <h2 className="text-xl">Frontend Developer</h2>
 
         <div className="hidden md:flex flex-col pt-12">
           <a href="#home" onClick={(e) => handleScroll(e, "home")} className="navlink">Home</a>
