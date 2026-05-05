@@ -20,7 +20,7 @@ function Header() {
         </h1>
         <h2 className="text-xl">Frontend Developer</h2>
 
-        <div className="hidden md:flex flex-col pt-12">
+        <div className="flex md:flex-col gap-4 mt-4 md:mt-8">
           <a href="#home" onClick={(e) => handleScroll(e, "home")} className="navlink">Home</a>
           <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="navlink">Skills</a>
           <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="navlink">Projects</a>

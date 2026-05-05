@@ -60,7 +60,7 @@
   }
 
   .pill {
-    @apply inline-flex items-center rounded-full bg-accent-subtle px-4 py-2 font-medium text-accent-text;
+    @apply inline-flex items-center rounded-full bg-accent-subtle px-2 py-1 text-sm md:px-4 md:py-2 md:font-medium text-accent-text;
   }
 
   .pill-sm {
