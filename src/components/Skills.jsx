@@ -8,7 +8,7 @@ const Skills = ({ skills }) => {
         {skills.map((skill, index) => (
           <li
             key={index}
-            className="font-medium text-center py-2 px-4 bg-accent-background rounded-full text-accent-text"
+            className="pill"
           >
             {skill}
           </li>

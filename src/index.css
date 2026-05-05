@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --color-page:     oklch(12% 0 0);
+  --color-surface:  oklch(18% 0 0);
+  --color-elevated: oklch(22% 0 0);
+  --color-border:   oklch(26% 0 0);
+
+  --color-accent:        oklch(65% 0.107 130.23);
+  --color-accent-hover:  oklch(55% 0.107 130.23);
+  --color-accent-text:   oklch(75% 0.107 130.23);
+  --color-accent-subtle: oklch(15% 0.107 130.23);
+
+  --color-fg:         oklch(78% 0 0);
+  --color-fg-muted:   oklch(65% 0 0);
+  --color-fg-heading: oklch(94% 0 0);
+
+  --color-fg-link:       var(--color-accent);
+  --color-fg-link-hover: var(--color-accent-hover);
+
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  :root {
+    color-scheme: dark;
+  }
+
+  body {
+    @apply bg-page text-fg font-sans antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply text-fg-heading;
+    font-weight: 600;
+  }
+
+  a {
+    @apply text-fg-link no-underline inline-flex items-center gap-1;
+  }
+
+  a:hover {
+    @apply text-fg-link-hover;
+  }
+}
+
+@layer components {
+  .card {
+    @apply rounded-lg bg-surface p-4;
+  }
+
+  .pill {
+    @apply inline-flex items-center rounded-full bg-accent-subtle px-4 py-2 font-medium text-accent-text;
+  }
+
+  .pill-sm {
+    @apply inline-flex items-center rounded-full bg-accent-subtle px-2 py-1 text-sm text-accent-text;
+  }
+
+  .navlink {
+    @apply no-underline font-semibold self-start py-2 transition-colors text-fg hover:text-accent-hover;
+  }
+
+  .iconlink {
+    @apply text-inherit no-underline m-0;
+  }
+}

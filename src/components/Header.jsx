@@ -14,24 +14,24 @@ function Header() {
     <div className="header h-full flex flex-col pt-8 md:py-28">
       <div>
         <h1 className="text-6xl">
-          <a href="#home" onClick={(e) => handleScroll(e, "home")} className="no-underline">
+          <a href="#home" onClick={(e) => handleScroll(e, "home")} className="text-fg-heading">
             Teodor Lien
           </a>
         </h1>
         <h2 className="text-2xl">Frontend Developer</h2>
 
         <div className="hidden md:flex flex-col pt-12">
-          <a href="#home" onClick={(e) => handleScroll(e, "home")} className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover">Home</a>
-          <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover">Skills</a>
-          <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover">Projects</a>
-          <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="no-underline font-semibold self-start py-2 transition-colors hover:text-accent-hover">Contact</a>
+          <a href="#home" onClick={(e) => handleScroll(e, "home")} className="navlink">Home</a>
+          <a href="#skills" onClick={(e) => handleScroll(e, "skills")} className="navlink">Skills</a>
+          <a href="#projects" onClick={(e) => handleScroll(e, "projects")} className="navlink">Projects</a>
+          <a href="#contact" onClick={(e) => handleScroll(e, "contact")} className="navlink">Contact</a>
         </div>
       </div>
       <div className="mt-0 pt-4 flex gap-4 md:mt-auto md:pt-12">
-        <a href="https://github.com/Teodor29" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline m-0">
+        <a href="https://github.com/Teodor29" target="_blank" rel="noopener noreferrer" className="iconlink">
           <FaGithub size={30} />
         </a>
-        <a href="https://www.linkedin.com/in/teodorlien" target="_blank" rel="noopener noreferrer" className="text-inherit no-underline m-0">
+        <a href="https://www.linkedin.com/in/teodorlien" target="_blank" rel="noopener noreferrer" className="iconlink">
           <FaLinkedin size={30} />
         </a>
       </div>
