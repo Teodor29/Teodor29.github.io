@@ -2,7 +2,7 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 import MailButton from "./MailButton";
 
-function Footer() {
+const Footer = () => {
   return (
     <section className="section hidden" id="contact">
       <h2 className="section-heading">Contact me!</h2>

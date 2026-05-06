@@ -1,7 +1,7 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 import MailButton from "./MailButton";
 
-function Header() {
+const Header = () => {
   const handleScroll = (e, id) => {
     e.preventDefault();
     if (id === "about") {
@@ -17,15 +17,12 @@ function Header() {
     <div className="header h-full flex flex-col pb-6 md:py-28">
       <div>
         <div className="md:mb-16">
-          <h1 className="text-5xl font-bold">
-            <a
-              href="#about"
-              onClick={(e) => handleScroll(e, "about")}
-              className="text-fg-heading"
-            >
-              Teodor Lien
-            </a>
-          </h1>
+          <a
+            href="#about"
+            onClick={(e) => handleScroll(e, "about")}
+          >
+            <h1 className="text-5xl font-bold text-fg-heading mb-1"> Teodor Lien</h1>
+          </a>
           <h2 className="text-xl mb-3">Frontend Developer</h2>
         </div>
 
@@ -81,6 +78,6 @@ function Header() {
       </div>
     </div>
   );
-}
+};
 
 export default Header;

@@ -60,7 +60,7 @@
   }
 
   .section-heading {
-    @apply mb-3 md:mb-6;
+    @apply mb-3 md:mb-6 tracking-wide;
   }
 
   .card {
@@ -76,7 +76,7 @@
   }
 
   .navlink {
-    @apply md:text-base no-underline font-semibold self-start py-3 transition-colors text-fg hover:text-accent-hover;
+    @apply md:text-base no-underline font-semibold self-start py-3 transition-colors text-fg hover:text-accent-hover tracking-wide;
   }
 
   .iconlink {
