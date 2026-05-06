@@ -7,14 +7,14 @@ import { skills } from "./data/portfolioData";
 
 function App() {
   return (
-    <div className="mx-4 md:mx-8">
+    <div className="px-6 py-12 md:mx-8 md:py-0">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 ">
           <div className="flex flex-col max-h-screen md:sticky top-0 pt-0">
             <Header />
           </div>
 
-          <div className="py-4 md:py-28">
+          <div className="md:py-28">
             <Home />
             <Skills skills={skills} />
             <Projects />

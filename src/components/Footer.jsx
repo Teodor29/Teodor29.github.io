@@ -3,8 +3,8 @@ import { IoMail } from "react-icons/io5";
 
 function Footer() {
   return (
-    <div className="py-4 md:py-8" id="contact">
-      <h2 className="mb-4">Contact me!</h2>
+    <section className="section" id="contact">
+      <h2 className="section-heading">Contact me!</h2>
       <div className="flex flex-col gap-2">
         <p>
           <a href="mailto:teodor.lien@gmail.com" className="footerlink">
@@ -25,7 +25,7 @@ function Footer() {
           </a>
         </p>
       </div>
-    </div>
+    </section>
   );
 }
 

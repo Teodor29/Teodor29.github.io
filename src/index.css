@@ -55,8 +55,16 @@
 }
 
 @layer components {
+  .section {
+    @apply py-6 md:py-12
+  }
+
+  .section-heading {
+    @apply text-xl mb-3 md:mb-6;
+  }
+
   .card {
-    @apply rounded-lg bg-surface p-4;
+    @apply rounded-lg -m-4 p-4 transition-colors duration-300 ease-in-out cursor-pointer hover:bg-surface;
   }
 
   .pill {
@@ -68,14 +76,14 @@
   }
 
   .navlink {
-    @apply no-underline font-semibold self-start py-2 transition-colors text-fg hover:text-accent-hover;
+    @apply text-sm md:text-base no-underline font-semibold self-start py-3 transition-colors text-fg hover:text-accent-hover;
   }
 
   .iconlink {
-    @apply text-fg no-underline flex items-center gap-2;
+    @apply text-fg hover:text-accent-hover no-underline flex items-center gap-2 transition-colors;
   }
 
   .footerlink {
-    @apply text-fg hover:text-accent-hover no-underline flex items-center gap-2;
+    @apply text-fg hover:text-accent-hover no-underline flex items-center gap-2 transition-colors;
   }
 }

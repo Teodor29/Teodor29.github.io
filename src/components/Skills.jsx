@@ -2,13 +2,13 @@ import React from "react";
 
 const Skills = ({ skills }) => {
   return (
-    <div id="skills" className="py-4 md:py-8">
-      <h2 className="mb-4">Skills</h2>
-      <div className="flex flex-col gap-4 md:gap-6">
+    <section id="skills" className="section">
+      <h2 className="section-heading">Skills</h2>
+      <div className="flex flex-col gap-3 md:gap-6">
         {skills.map(({ category, items }) => (
           <div key={category}>
             <div className="">
-              <h3 className="text-sm font-semibold uppercase tracking-wide mb-2 opacity-60">
+              <h3 className="text-sm font-semibold uppercase tracking-wide mb-2 text-fg-muted">
                 {category}
               </h3>
               <ul className="flex gap-2 md:gap-3 pl-0 list-none flex-wrap">
@@ -22,7 +22,7 @@ const Skills = ({ skills }) => {
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
