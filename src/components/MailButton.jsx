@@ -37,7 +37,7 @@ const MailButton = ({ size = 30 }) => {
       </button>
 
       {open && (
-        <div className=" absolute left-1/2 top-full -translate-x-1/2 mt-2 bg-surface shadow-lg rounded-xl p-4">
+        <div className=" absolute left-1/2 top-full -translate-x-1/2 mt-2 bg-surface shadow-lg rounded-xl p-3">
           <div className="flex items-center ">
             <span className="">{email}</span>
             <button
