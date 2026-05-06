@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
         className="w-full object-cover rounded-lg mb-3"
       />
       <h3 className="mb-1">{project.title}</h3>
-      <p className="text-sm text-fg-muted mb-2">{project.description}</p>
+      <p className="text-sm mb-2">{project.description}</p>
       <ul className="flex gap-2 list-none flex-wrap">
         {project.skills.map((skill) => (
           <li key={skill} className="pill-sm">

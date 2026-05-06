@@ -3,6 +3,8 @@ import toDo from "../assets/to-do.png";
 import trainDelayMap from "../assets/train-delay-map.png";
 import lienCapital from "../assets/lien-capital.png";
 
+export const email = "teodor.lien@gmail.com";
+
 export const skills = [
   {
     category: "Frontend",

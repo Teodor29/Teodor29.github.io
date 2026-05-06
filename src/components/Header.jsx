@@ -1,9 +1,10 @@
 import { FaGithub, FaLinkedin } from "react-icons/fa";
+import MailButton from "./MailButton";
 
 function Header() {
   const handleScroll = (e, id) => {
     e.preventDefault();
-    if (id === "home") {
+    if (id === "about") {
       window.scrollTo({ top: 0, behavior: "smooth" });
       return;
     }
@@ -18,44 +19,44 @@ function Header() {
         <div className="md:mb-16">
           <h1 className="text-5xl font-bold">
             <a
-              href="#home"
-              onClick={(e) => handleScroll(e, "home")}
+              href="#about"
+              onClick={(e) => handleScroll(e, "about")}
               className="text-fg-heading"
             >
               Teodor Lien
             </a>
           </h1>
-          <h2 className="text-xl">Frontend Developer</h2>
+          <h2 className="text-xl mb-3">Frontend Developer</h2>
         </div>
 
-        <div className="flex gap-3 md:gap-0 md:flex-col md:mb-8">
+        <div className="hidden md:flex gap-3 md:gap-0 md:flex-col md:mb-8">
           <a
-            href="#home"
-            onClick={(e) => handleScroll(e, "home")}
+            href="#about"
+            onClick={(e) => handleScroll(e, "about")}
             className="navlink hidden md:block"
           >
-            Home
+            ABOUT
           </a>
           <a
             href="#skills"
             onClick={(e) => handleScroll(e, "skills")}
             className="navlink"
           >
-            Skills
+            SKILLS
           </a>
           <a
             href="#projects"
             onClick={(e) => handleScroll(e, "projects")}
             className="navlink"
           >
-            Projects
+            PROJECTS
           </a>
           <a
             href="#contact"
             onClick={(e) => handleScroll(e, "contact")}
-            className="navlink"
+            className="navlink hidden"
           >
-            Contact
+            CONTACT
           </a>
         </div>
       </div>
@@ -76,6 +77,7 @@ function Header() {
         >
           <FaLinkedin size={30} />
         </a>
+        <MailButton size={30} />
       </div>
     </div>
   );

@@ -3,21 +3,21 @@
 @import "tailwindcss";
 
 @theme {
-  --color-page:     oklch(12% 0 0);
-  --color-surface:  oklch(18% 0 0);
+  --color-page: oklch(12% 0 0);
+  --color-surface: oklch(18% 0 0);
   --color-elevated: oklch(22% 0 0);
-  --color-border:   oklch(26% 0 0);
+  --color-border: oklch(26% 0 0);
 
-  --color-accent:        oklch(65% 0.1 130);
-  --color-accent-hover:  oklch(55% 0.1 130);
-  --color-accent-text:   oklch(75% 0.1 130);
+  --color-accent: oklch(65% 0.1 130);
+  --color-accent-hover: oklch(55% 0.1 130);
+  --color-accent-text: oklch(75% 0.1 130);
   --color-accent-subtle: oklch(25% 0.02 130);
 
-  --color-fg:         oklch(78% 0 0);
-  --color-fg-muted:   oklch(65% 0 0);
+  --color-fg: oklch(78% 0 0);
+  --color-fg-muted: oklch(65% 0 0);
   --color-fg-heading: oklch(94% 0 0);
 
-  --color-fg-link:       var(--color-accent);
+  --color-fg-link: var(--color-accent);
   --color-fg-link-hover: var(--color-accent-hover);
 
   --font-sans: "Inter", sans-serif;
@@ -31,9 +31,9 @@
   body {
     @apply bg-page text-fg font-sans antialiased;
   }
-  
+
   h2 {
-    @apply text-lg
+    @apply text-lg;
   }
 
   h1,
@@ -56,11 +56,11 @@
 
 @layer components {
   .section {
-    @apply py-6 md:py-12
+    @apply py-6 md:py-12;
   }
 
   .section-heading {
-    @apply text-xl mb-3 md:mb-6;
+    @apply mb-3 md:mb-6;
   }
 
   .card {
@@ -76,7 +76,7 @@
   }
 
   .navlink {
-    @apply text-sm md:text-base no-underline font-semibold self-start py-3 transition-colors text-fg hover:text-accent-hover;
+    @apply md:text-base no-underline font-semibold self-start py-3 transition-colors text-fg hover:text-accent-hover;
   }
 
   .iconlink {

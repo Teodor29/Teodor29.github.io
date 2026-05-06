@@ -3,7 +3,7 @@ import React from "react";
 const Skills = ({ skills }) => {
   return (
     <section id="skills" className="section">
-      <h2 className="section-heading">Skills</h2>
+      <h2 className="section-heading">SKILLS</h2>
       <div className="flex flex-col gap-3 md:gap-6">
         {skills.map(({ category, items }) => (
           <div key={category}>
