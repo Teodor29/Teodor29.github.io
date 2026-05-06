@@ -39,15 +39,15 @@ const MailButton = ({ size = 30 }) => {
       {open && (
         <div className=" absolute left-1/2 top-full -translate-x-1/2 mt-2 bg-surface shadow-lg rounded-xl p-4">
           <div className="flex items-center ">
-            <span className="text-sm">{email}</span>
+            <span className="">{email}</span>
             <button
               onClick={handleCopy}
-              className="text-xs bg-black text-fg px-2 py-1 rounded-md hover:text-fg-muted cursor-pointer"
+              className=" text-fg p-1 ml-3 rounded-md hover:text-fg-muted cursor-pointer"
             >
               {copied ? (
-                <FaClipboardCheck size={16} />
+                <FaClipboardCheck size={20} />
               ) : (
-                <FaClipboard size={16} />
+                <FaClipboard size={20} />
               )}
             </button>
           </div>
