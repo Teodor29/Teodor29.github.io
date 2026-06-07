@@ -1,9 +1,14 @@
-import { FaGithub } from "react-icons/fa";
-import { FiExternalLink } from "react-icons/fi";
+import { FaGithub } from 'react-icons/fa'
+import { FiExternalLink } from 'react-icons/fi'
 
 const ProjectCard = ({ project }) => {
   return (
-    <div className="card" onClick={() => window.open(project.link, "_blank")}>
+    <a
+      className="card"
+      href={project.link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img
         src={project.image}
         alt={project.altText}
@@ -18,8 +23,8 @@ const ProjectCard = ({ project }) => {
           </li>
         ))}
       </ul>
-    </div>
-  );
-};
+    </a>
+  )
+}
 
-export default ProjectCard;
+export default ProjectCard

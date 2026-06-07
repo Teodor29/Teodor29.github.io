@@ -1,31 +1,31 @@
-import { useState, useEffect, useRef } from "react";
-import { IoMail } from "react-icons/io5";
-import { FaClipboard } from "react-icons/fa";
-import { FaClipboardCheck } from "react-icons/fa";
-import { email } from "../data/portfolioData";
+import { useState, useEffect, useRef } from 'react'
+import { IoMail } from 'react-icons/io5'
+import { FaClipboard } from 'react-icons/fa'
+import { FaClipboardCheck } from 'react-icons/fa'
+import { email } from '../data/portfolioData'
 
 const MailButton = ({ size = 30 }) => {
-  const [open, setOpen] = useState(false);
-  const [copied, setCopied] = useState(false);
-  const popupRef = useRef(null);
+  const [open, setOpen] = useState(false)
+  const [copied, setCopied] = useState(false)
+  const popupRef = useRef(null)
 
   const handleCopy = async () => {
-    await navigator.clipboard.writeText(email);
-    setCopied(true);
+    await navigator.clipboard.writeText(email)
+    setCopied(true)
 
-    setTimeout(() => setCopied(false), 1500);
-  };
+    setTimeout(() => setCopied(false), 1500)
+  }
 
   useEffect(() => {
     const handleClickOutside = (e) => {
       if (popupRef.current && !popupRef.current.contains(e.target)) {
-        setOpen(false);
+        setOpen(false)
       }
-    };
+    }
 
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
+    document.addEventListener('mousedown', handleClickOutside)
+    return () => document.removeEventListener('mousedown', handleClickOutside)
+  }, [])
 
   return (
     <div ref={popupRef} className="relative inline-block">
@@ -54,7 +54,7 @@ const MailButton = ({ size = 30 }) => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default MailButton;
+export default MailButton

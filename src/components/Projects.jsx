@@ -1,5 +1,5 @@
-import React from "react";
-import ProjectCard from "./ProjectCard.jsx";
+import React from 'react'
+import ProjectCard from './ProjectCard.jsx'
 
 const Projects = ({ projects }) => {
   return (
@@ -11,7 +11,7 @@ const Projects = ({ projects }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Projects;
+export default Projects

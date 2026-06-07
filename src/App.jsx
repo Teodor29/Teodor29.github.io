@@ -1,9 +1,9 @@
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Projects from "./components/Projects";
-import Skills from "./components/Skills";
-import Header from "./components/Header";
-import { skills, projects } from "./data/portfolioData";
+import Footer from './components/Footer'
+import Home from './components/Home'
+import Projects from './components/Projects'
+import Skills from './components/Skills'
+import Header from './components/Header'
+import { skills, projects } from './data/portfolioData'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-[45%_55%] ">
           <div className="flex flex-col max-h-screen md:sticky top-0 pt-0">
-            <Header/>
+            <Header />
           </div>
 
           <div className="md:py-28">
@@ -23,7 +23,7 @@ function App() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
