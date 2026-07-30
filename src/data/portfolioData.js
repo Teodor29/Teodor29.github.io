@@ -10,12 +10,12 @@ export const skills = [
   {
     category: 'Frontend',
     items: [
-      'JavaScript',
-      'TypeScript',
       'React',
-      'Tailwind CSS',
-      'CSS/SCSS',
+      'TypeScript',
+      'JavaScript',
       'HTML',
+      'CSS/SCSS',
+      'Tailwind CSS',
     ],
   },
   {
@@ -23,29 +23,21 @@ export const skills = [
     items: ['Node.js', 'Express.js', 'REST API', 'MongoDB', 'MySQL'],
   },
   {
-    category: 'Tools',
-    items: ['Git', 'Vercel', 'Docker'],
+    category: 'Other',
+    items: ['Git', 'Vite', 'Vitest', 'Docker'],
   },
 ]
 export const projects = [
   {
     title: 'Slicr Budget App',
     description:
-      'A personal budgeting web app that allows users to set monthly income, create spending categories, and track expenses in real time. Built with React, TypeScript, and Tailwind CSS. Data is stored in localStorage.',
+      'A personal budgeting web app that allows users to set monthly income, create spending categories, and track expenses in real time. Data is stored in localStorage. Focus was on clean component architecture and a intuitive UI',
     image: slicr,
     altText: 'Slicr Budget App',
     skills: ['React', 'TypeScript', 'Tailwind CSS', 'Vercel'],
     link: 'https://slicr-budget-app.vercel.app/',
   },
-  {
-    title: 'To Do List',
-    description:
-      'A task management app built with React and Tailwind CSS. Users can create, complete, and manage tasks with a clean and minimal UI.',
-    image: toDo,
-    altText: 'To Do App',
-    skills: ['React', 'JavaScript', 'Tailwind CSS', 'Vercel'],
-    link: 'https://to-do-teodor29.vercel.app/',
-  },
+
   {
     title: 'Train Delay Map',
     description:
@@ -58,7 +50,7 @@ export const projects = [
   {
     title: 'E-scooter Rental',
     description:
-      'A full-stack group project featuring an electric scooter rental system with backend services, simulation layer, and three clients (admin, mobile, and desktop). Responsible for frontend development and Docker-based containerization for local development.',
+      'A full-stack group project featuring an electric scooter rental system with backend services, simulation layer, and three clients (admin, mobile, and desktop). I was responsible for frontend development and Docker-based containerization for local development.',
     image: scooterAdminMap,
     altText: 'E-scooter Rental Platform',
     skills: [
@@ -71,14 +63,5 @@ export const projects = [
       'REST API',
     ],
     link: 'https://github.com/Teodor29/e-scooter-project-vteam',
-  },
-  {
-    title: 'Lien Capital',
-    description:
-      'A responsive corporate website built with Pico CMS for an investment company. Focused on clean design, performance, and maintainable structure using Twig templates and SCSS.',
-    image: lienCapital,
-    altText: 'Lien Capital Website',
-    skills: ['PHP', 'Twig', 'SCSS', 'Pico CMS'],
-    link: 'https://github.com/Teodor29/investment-company-design',
   },
 ]
