@@ -3,10 +3,10 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-page: oklch(12% 0 0);
-  --color-surface: oklch(18% 0 0);
-  --color-elevated: oklch(22% 0 0);
-  --color-border: oklch(26% 0 0);
+  --color-page: oklch(18% 0 0);
+  --color-surface: oklch(22% 0 0);
+  --color-elevated: oklch(26% 0 0);
+  --color-border: oklch(30% 0 0);
 
   --color-accent: oklch(65% 0.1 130);
   --color-accent-hover: oklch(55% 0.1 130);
